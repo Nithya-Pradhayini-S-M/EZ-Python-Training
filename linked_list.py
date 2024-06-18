@@ -1,43 +1,3 @@
-'''class Node:
-    def __init__(self,data):
-        self.value=data
-        self.next=None
-head=tail=Node(10)
-
-tail.next=Node(20)
-tail=tail.next
-
-tail.next=Node(30)
-tail=tail.next
-
-def front_insert(data):
-   head=tail=Node(10)
-
-   tail.next=Node(20)
-   tail=tail.next
-
-   tail.next=Node(30)
-   tail=tail.next
-   curr=None
-   if head == None:
-       print("List is empty")
-   else:
-       curr.next=head
-       head=curr        
-
-front_insert(50)
-
-
-def display(head):
-    if head == None:
-        print("List is empty")
-        return
-    curr=head
-    while curr != None:
-        print(curr.value)
-        curr=curr.next
-
-display(head)'''
 class Node:
     def __init__(self,data):
         self.data=data
@@ -54,7 +14,7 @@ class Linked_list:
 #Inserting Node at the Beginning
     def front_insert(self,data):
        new_node=Node(data)
-       if self.head is None:          #the list is empty (i.e., self.head is None), it sets the new node as the head of the list.
+       if self.head is None:         #the list is empty (i.e., self.head is None), it sets the new node as the head of the list.
         self.head = new_node
         return
        else:
